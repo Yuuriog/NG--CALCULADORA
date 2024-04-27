@@ -1,0 +1,40 @@
+<input
+  type="text"
+  class="w-100 mb-4 text-end fs-5 border border-light-subtle"
+  readonly
+  [value]="value"
+/>
+
+<div class="row justify-content-center">
+  <div class="row gap-3 mb-3">
+    <button class="btn btn-primary col" (click)="setValue('0')">0</button>
+    <button class="btn btn-primary col" (click)="setValue('1')">1</button>
+    <button class="btn btn-primary col" (click)="setValue('2')">2</button>
+
+    <button class="btn btn-secondary col" (click)="setValue('*')">*</button>
+  </div>
+
+  <div class="row gap-3 mb-3">
+    <button class="btn btn-primary col" (click)="setValue('3')">3</button>
+    <button class="btn btn-primary col" (click)="setValue('4')">4</button>
+    <button class="btn btn-primary col" (click)="setValue('5')">5</button>
+
+    <button class="btn btn-secondary col" (click)="setValue('/')">/</button>
+  </div>
+
+  <div class="row gap-3 mb-3">
+    <button class="btn btn-primary col" (click)="setValue('6')">6</button>
+    <button class="btn btn-primary col" (click)="setValue('7')">7</button>
+    <button class="btn btn-primary col" (click)="setValue('8')">8</button>
+
+    <button class="btn btn-secondary col" (click)="setValue('-')">-</button>
+  </div>
+
+  <div class="row gap-3">
+    <button class="btn btn-primary col" (click)="setValue('9')">9</button>
+    <button class="btn btn-secondary col" (click)="clear()">CE</button>
+    <button class="btn btn-danger col" (click)="calculate()">=</button>
+
+    <button class="btn btn-secondary col" (click)="setValue('+')">+</button>
+  </div>
+</div>
